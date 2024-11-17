@@ -32,7 +32,7 @@ You need to:
      - Minimum test MSE.
      - Sum of the regression coefficients.
 
-3. **`nonzeros_WL1L0_ADMM`**
+3. **`nonzeros_WL1L0_ADMM  = count(x -> x != 0,result_WL1L0_ADMM[2])`**
    - Outputs the number of non-zero coefficients.
 
 ---
