@@ -1,17 +1,17 @@
 # WL1L0-ADMM and WL1L0-SCPRSM
 
-WL1L0-ADMM and WL1L0-SCPRSM both contain Julia code for the proximal optimization of the weighted \(L^1\) and \(L^0\) regularizers, as presented in Berkessa and Waldmann (2024) and published in *Transactions on Machine Learning Research (TMLR)*. 
+WL1L0-ADMM and WL1L0-SCPRSM both contain Julia code for the proximal optimization of the weighted $L^1$ and $L^0$ regularizers, as presented in Berkessa and Waldmann (2024) and published in *Transactions on Machine Learning Research (TMLR)*. 
 
 - **WL1L0-ADMM** implements the proximal ADMM method.
 - **WL1L0-SCPRSM** implements the proximal SCPRSM method.
 
 ## Data Requirements
 
-The code reads data from the **QTLMAS2010ny012.csv** file available in the [AUTALASSO directory](https://github.com/patwa67/AUTALASSO/blob/master/QTLMAS2010ny012.zip). 
+The code reads the data file **QTLMAS2010ny012.csv** from the local working directory. This data is available in the [AUTALASSO directory](https://github.com/patwa67/AUTALASSO/blob/master/QTLMAS2010ny012.zip). 
 
 You need to:
-1. Download the file to your working directory.
-2. Extract its contents.
+1. Download the file.
+2. Extract and save it to your local working directory.
 
 ### Data Format
 - **y-variable (phenotype)**: Located in the first column.
@@ -27,7 +27,7 @@ You need to:
 1. **`res_WL1L0_ADMM = boptimize!(opt_WL1L0_ADMM)`**
    - Produces the minimum test MSE with regularization parameters `alpha` and `lambda` for the test MSE minimizer.
 
-2. **`@time result_WL1L0_ADMM`**
+2. **`@time result_WL1L0_ADMM = WL1L0_ADMM_bo(res_WL1L0_ADMM[2][1], res_WL1L0_ADMM[2][2])`**
    - Produces timing and a list containing:
      - Minimum test MSE.
      - Sum of the regression coefficients.
@@ -70,4 +70,4 @@ The rest of the code usage for the pig dataset and mice dataset is straightforwa
 
 ## References
 
-- Berkessa and Waldmann (2024), *Weighted \(L^1\) and \(L^0\) Regularization Using Proximal Operator Splitting Methods*, *Transactions on Machine Learning Research (TMLR)*.
+- Berkessa and Waldmann (2024), *Weighted $L^1$ and $L^0$ Regularization Using Proximal Operator Splitting Methods*, *Transactions on Machine Learning Research (TMLR)*.
