@@ -70,4 +70,4 @@ The rest of the code usage for the pig dataset and mice dataset is straightforwa
 
 ## References
 
-- Berkessa and Waldmann (2024), *Weighted $L^1$ and $L^0$ Regularization Using Proximal Operator Splitting Methods*, *Transactions on Machine Learning Research (TMLR)*.
+- Berkessa and Waldmann (2024), Weighted $L^1$ and $L^0$ Regularization Using Proximal Operator Splitting Methods, Transactions on Machine Learning Research (TMLR).
