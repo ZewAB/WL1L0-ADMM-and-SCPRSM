@@ -69,7 +69,7 @@ The rest of the code usage for the pig dataset and mice dataset is straightforwa
 
 ---
 
-## References
+## To cite this paper, please use the following:
 
 @article{
 berkessa2024weighted,
