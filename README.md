@@ -1,6 +1,7 @@
 # WL1L0-ADMM and WL1L0-SCPRSM
 
-WL1L0-ADMM and WL1L0-SCPRSM both contain Julia code for the proximal optimization of the weighted $L^1$ and $L^0$ regularizers, as presented in Berkessa and Waldmann (2024) and published in *Transactions on Machine Learning Research (TMLR)*. 
+WL1L0-ADMM and WL1L0-SCPRSM both contain Julia code for the proximal optimization of the weighted $L^1$ and $L^0$ regularizers, as presented in Berkessa and Waldmann (2024) and published in *Transactions on Machine Learning Research (TMLR)*. For additional details, please refer to [our manuscript](https://openreview.net/forum?id=9m2k96cDMK). 
+
 
 - **WL1L0-ADMM** implements the proximal ADMM method.
 - **WL1L0-SCPRSM** implements the proximal SCPRSM method.
@@ -70,4 +71,14 @@ The rest of the code usage for the pig dataset and mice dataset is straightforwa
 
 ## References
 
-- Berkessa and Waldmann (2024), Weighted $L^1$ and $L^0$ Regularization Using Proximal Operator Splitting Methods, Transactions on Machine Learning Research (TMLR).
+@article{
+berkessa2024weighted,
+title={Weighted L1 and L0 Regularization Using Proximal Operator Splitting Methods},
+author={Zewude A. Berkessa and Patrik Waldmann},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2024},
+url={https://openreview.net/forum?id=9m2k96cDMK},
+note={}
+}
+
